@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:  */
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    width: 40vw;
+    background-image: url("./Images/Splash.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-repeat: no-repeat;
+
+
+    display:flex;
+    flex-direction: column;
+    flex: 1 0;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.sidebar .logo {
+    position: relative;
+    top: 5%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 4em;
+}
+
+.sidebar p {
+    position:fixed;
+    bottom: 1vh; 
+    
+}
+
+.sidebar img {
+    padding: 1em;
+    width: 10em;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.527);
+    display:flex;
+    justify-content: center;
+     
+}
