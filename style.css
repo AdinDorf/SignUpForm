@@ -29,7 +29,6 @@ span {
     background-position: 80%;
     background-repeat: no-repeat;
 
-
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -90,31 +89,48 @@ span {
 .form p {
     font-weight: bold;
     font-size: 2em;
+    
 }
 
 ul {
-    display:flex;    
+    display: flex;    
     flex-flow: row wrap;
     gap: 1em;
 }
 li {
-    min-width:40%;
     display: flex;
     flex-flow: column wrap;
-    flex: auto;
+    flex: 1 0 40%;
     justify-content: center;
     align-items: flex-start;
+}
+
+li input {
+    min-width: 80%;
+    min-height: 2em;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+li input:hover{
+    border-color: rgb(205, 235, 220);
 }
 
 .button-wrapper, .account-blurb {
     padding: 1em;
 }
+
 button {
     color:white;
     background-color: rgb(90, 142, 13);
-    border-radius: 5px;
+    border-radius: 8px;
     border-style: none;
     box-shadow: 0 5px 10px 4px rgba(0, 0, 0, 0.15);
     padding: 1em
 }
+
+button:hover {
+    background-color: rgba(90, 142, 13, 0.8);
+}
+
 
